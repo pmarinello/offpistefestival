@@ -73,7 +73,7 @@ header li a[href="Tickets"] {
 }
 
 .brock {
-    background-image: url(Images/brockhampton.png);
+    background-image: url(images/brockhampton.png);
     width: 50vw;
     height: 27em;
     background-position-x:center;
@@ -90,7 +90,7 @@ header li a[href="Tickets"] {
 }
 
 .fred {
-    background-image: url(Images/fredagain.jpg);
+    background-image: url(images/fredagain.jpg);
     width: 50vw;
     height: 27em;
     background-position-x:center;
@@ -106,7 +106,7 @@ header li a[href="Tickets"] {
 }
 
 .childish {
-    background-image: url(Images/childishgambino.jpg);
+    background-image: url(images/childishgambino.jpg);
     width: 100vw;
     height: 27em;
     background-position-x:center;
