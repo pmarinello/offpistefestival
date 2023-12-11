@@ -73,7 +73,7 @@ header li a[href="Tickets"] {
 }
 
 .brock {
-    background-image: url(images/brockhampton.png);
+    background-image: url('images/brockhampton.png');
     width: 50vw;
     height: 27em;
     background-position-x:center;
