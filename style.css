@@ -274,21 +274,21 @@ footer nav ul li a {
 
 
 .instagram-logo {
-    background: url('Images/instagramlogo.svg') no-repeat center center;
+    background: url('images/instagramlogo.svg') no-repeat center center;
     background-size: contain;
     width: 2.5em;
     height: 2.5em;
 }
 
 .spotify-logo {
-    background: url('Images/spotifylogo.svg') no-repeat center center;
+    background: url('images/spotifylogo.svg') no-repeat center center;
     background-size: contain;
     width: 2.5em;
     height: 2.5em;
 }
 
 .twitter-logo {
-    background: url('Images/x-logo.svg') no-repeat center center;
+    background: url('images/x-logo.svg') no-repeat center center;
     background-size: contain;
     width: 2.5em;
     height: 2.5em;
