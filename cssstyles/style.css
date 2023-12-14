@@ -75,9 +75,20 @@ header li a {
     font-size: 1.8em;
 }
 
+header li a:hover {
+    background: linear-gradient(to right, #ff6600, #ff3300);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 header li a[href="Tickets"] {
     border: 3px solid white;
     padding: 5px 15px; 
+}
+
+header li a[href="Tickets"]:hover {
+    border: 3px solid #ff6600;
 }
 
 .duophoto{
@@ -111,6 +122,13 @@ header li a[href="Tickets"] {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.landingpage main div section:hover  h3{
+    background: linear-gradient(to right, #ff6600, #ff3300);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .fred div {
@@ -188,6 +206,14 @@ header li a[href="Tickets"] {
     font-weight:100;
     font-weight: lighter;
     margin: 0.25em;
+}
+
+.ticketbanner div:hover a {
+    background: linear-gradient(to right, #ff6600, #ff3300);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: 3px solid #ff3300;
 }
 
 .ticketbuttons {
@@ -374,6 +400,13 @@ h3 {
     padding: 0;
     font-size: 3.2em;
     margin: 0;
+}
+
+.lineuppage section section:hover h3 {
+    background: linear-gradient(to right, #ff6600, #ff3300);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .friday div:nth-child(1){
@@ -760,9 +793,11 @@ h3 {
     font-weight: 400;
     text-decoration:none;
     color: white;
-    
 }
 
+.news {
+
+}
 .news section {
     display: flex;
 }
@@ -835,6 +870,16 @@ main section div:nth-child(2) {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+}
+
+main section div:nth-child(2):hover h4{
+    color: #eb5e00;
+    font-weight:bold;
+    }
+
+main section div:nth-child(2):hover a{
+color: #eb5e00;
+font-weight:bold;
 }
 
 section div:last-of-type img {
