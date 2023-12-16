@@ -1,10 +1,4 @@
-/* /* /*  Line Up Pagina */ 
 
-/* @font-face {
-    font-family: "inter"
-    src: url(fonts/Inter-VariableFont_slnt,wght.ttf) format(ttf);
-}
- */
 
 @font-face {
     font-family: "inter";
@@ -91,6 +85,8 @@ header li a[href="Tickets"]:hover {
     border: 3px solid #ff6600;
 }
 
+
+
 .duophoto{
     display: flex;
 
@@ -105,7 +101,6 @@ header li a[href="Tickets"]:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
 }
 
 .brock div {
@@ -184,8 +179,8 @@ header li a[href="Tickets"]:hover {
     text-align: center;
     width: 100vw;
     height: 27em;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; 
+    justify-content: center; 
 }
 
 .ticketbanner h2{
@@ -208,7 +203,7 @@ header li a[href="Tickets"]:hover {
     margin: 0.25em;
 }
 
-.ticketbanner div:hover a {
+.ticketbuttons a:hover {
     background: linear-gradient(to right, #ff6600, #ff3300);
     -webkit-background-clip: text;
     background-clip: text;
@@ -302,6 +297,13 @@ footer nav ul li a {
     color: white;
 }
 
+footer nav ul li a:hover {
+    background: linear-gradient(15deg, #ff6600 35%, #ff3300 70%, #ff3300 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .socials div {
     display: flex;
     justify-content: center;
@@ -331,6 +333,10 @@ footer nav ul li a {
     background-size: contain;
     width: 2.5em;
     height: 2.5em;
+}
+
+.instagram-logo:hover, .spotify-logo:hover, .twitter-logo:hover {
+  filter: invert(44%) sepia(44%) saturate(2049%) hue-rotate(357deg) brightness(97%) contrast(111%);
 }
 
 .subscribe div {
@@ -366,6 +372,15 @@ font-size: 6em;
     color: white;
 }
 
+.subscribe div button:hover {
+    background: linear-gradient(15deg, #ff6600 35%, #ff3300 70%, #ff3300 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: solid #ff6600;
+}
+
+
 
 
 
@@ -393,6 +408,55 @@ main h2 {
     font-size: 6em;
     margin: 0em;
 }
+
+.lineuppage main div {
+    overflow: hidden;
+}
+
+.friday div h2 {
+    animation: move-rtl1 3500ms linear infinite;
+    padding-left: 2em;
+    
+}
+
+@keyframes move-rtl1 {
+0% {
+    transform: translateX(0);
+}
+
+100% {transform: translateX(-106.7%);}
+}
+
+.saturday div h2 {
+    animation: move-rtl2 3500ms linear infinite;
+    padding-left: 2em;
+    
+}
+
+@keyframes move-rtl2 {
+0% {
+    transform: translateX(0);
+}
+
+100% {transform: translateX(-105.59%);}
+}
+
+.sunday div h2 {
+    animation: move-rtl3 3500ms linear infinite;
+    padding-left: 2em;
+    
+}
+
+@keyframes move-rtl3 {
+0% {
+    transform: translateX(0);
+}
+
+100% {transform: translateX(-105.86%);}
+}
+
+
+
 
 h3 {
     font-family: 'inter';
@@ -445,13 +509,6 @@ h3 {
     justify-content: flex-end;
 }
 
-.tripplephoto {
-    display: flex;
-}
-
-.tripplephoto {
-    display: flex;
-}
 
 .friday > div:nth-child(3) {
     display: flex;
@@ -516,6 +573,39 @@ h3 {
     flex-direction: column;
     justify-content: flex-end;
 }
+
+
+
+.lineuppage main section {
+    position: relative;
+}
+
+.lineuppage main section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+    z-index: 1;
+}
+
+.friday h3 {
+    z-index: 2; 
+    color: #fff; 
+    margin: 0; 
+    padding: 10px; 
+}
+
+.friday img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 0;
+}
+
 
 .saturday div:nth-child(1) {
     display: flex;
@@ -882,7 +972,7 @@ color: #eb5e00;
 font-weight:bold;
 }
 
-section div:last-of-type img {
+.news section div:last-of-type img {
     position: static;
     width: auto;
     height: auto;
@@ -963,10 +1053,147 @@ section div:last-of-type div {
     margin-bottom: 2em;
 }
 
-.infopage main section section{
-    height: 16em;
-    border-bottom: 0.01em solid white;
-    padding-bottom: 20px;
+
+
+.test input[type="checkbox"] {
+    display: none;
+}
+
+.test label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    overflow: hidden; 
+    max-height: 10.3em; 
+    transition: max-height 0.3s ease;
+    border-bottom: white solid 2px;
+}
+
+.test label:hover h3{
+    background: linear-gradient(to right, #ff6600, #ff3300);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.test div {
+    padding: 10px;
+}
+
+.test input[type="checkbox"]:checked + label {
+    max-height: 500px; 
+}
+
+.infopage section img {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    clip: auto;
+    border: 0;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 
+.test label:hover img{
+    filter: invert(44%) sepia(44%) saturate(2049%) hue-rotate(357deg) brightness(97%) contrast(111%);
+}
+
+#toggle-3 {
+    display: none;
+}
+
+#toggle-1:checked + label img {
+    transform: rotate(90deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+
+#toggle-1:not(:checked) + label img {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+#toggle-2:checked + label img {
+    transform: rotate(90deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+
+#toggle-2:not(:checked) + label img {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+    
+}
+
+#toggle-3:checked + label img {
+    transform: rotate(90deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+
+#toggle-3:not(:checked) + label img {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+#toggle-4:checked + label img {
+    transform: rotate(90deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+
+#toggle-4:not(:checked) + label img {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+#toggle-5:checked + label img {
+    transform: rotate(90deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+
+#toggle-5:not(:checked) + label img {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* ---- sources pagina - Deze pagina is te vinden in de footer ---- */
+
+.sourcespage img {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    clip: auto;
+    border: 0;
+    width: 50vw;
+}
